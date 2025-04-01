@@ -1,3 +1,5 @@
+const { OpenAIAPIKey } = require('./config');
+
 class OpenAIAPI {
     static async generateResponse(userMessage, conversationHistory = []) {
         const apiKey = process.env.OPENAI_API_KEY;
